@@ -1,0 +1,20 @@
+# 忽略 Python 编译文件
+__pycache__/
+*.py[cod]
+
+# 忽略环境配置文件
+.env
+*.env
+
+# 忽略虚拟环境目录
+venv/
+env/
+
+# 忽略日志文件
+*.log
+
+# 忽略操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+test.ipynb
