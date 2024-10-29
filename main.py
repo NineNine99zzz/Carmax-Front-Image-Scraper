@@ -6,14 +6,14 @@ import requests
 import pandas as pd
 
 # set working directory
-os.chdir(r'D:\project_data\carmax')
+os.chdir(r'D:\project_data\carmax_1000_raw')
 
 # create folder to store images
 if not os.path.exists('images'):
     os.makedirs('images')
 
 # read data
-df = pd.read_csv(r'D:\project_data\carmax\carmax_sample_img.csv')
+df = pd.read_csv(r'carmax_sample_img.csv')
 url_list = df['image_url']
 image_names = df['year'].astype(str) + '_' + df['make'] + '_' + df['model'] + '.jpg'
 
